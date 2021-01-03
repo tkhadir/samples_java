@@ -55,3 +55,10 @@ public class JavaBruteForcer implements Runnable {
         System.out.println("done." + LocalDateTime.now());
     }
 }
+
+/**
+available cores : 8
+started : 2021-01-03T23:36:09.389333
+found : findme
+done.2021-01-03T23:38:27.541796100
+*/
