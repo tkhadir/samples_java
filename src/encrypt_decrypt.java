@@ -23,7 +23,7 @@ public class EncryptDecryptHelper {
           final String transform = "AES/CBC/PKCS5Padding";
   
           File file = new File("./msg.txt");
-          final byte[] input = Files.readAllBytes(file.toPath());
+          final byte[] input = Files.readAllBytes(file.toPath());//getUTF8Bytes("hello world")
           //Encryption with CryptoOutputStream.
   
           final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
