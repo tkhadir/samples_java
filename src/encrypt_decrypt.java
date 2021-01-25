@@ -20,7 +20,7 @@ public class EncryptDecryptHelper {
           final SecretKeySpec key = new SecretKeySpec(getUTF8Bytes("1234567890123456"),"AES");
           final IvParameterSpec iv = new IvParameterSpec(getUTF8Bytes("1234567890123456"));
           final Properties properties = new Properties();
-          final String transform = "AES/CBC/PKCS5Padding";
+          final String transform = "AES/CBC/PKCS5Padding";//"A2G"
   
           File file = new File("./msg.txt");
           final byte[] input = Files.readAllBytes(file.toPath());//getUTF8Bytes("hello world")
